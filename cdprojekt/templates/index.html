@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Info</title>
+</head>
+<body>
+<h1>Car Info</h1>
+
+    <div class="cars" style="display: block;">
+    {% for car in cars %}
+        <h3>{{ car.brand }} - {{ car.date }} - {{ car.color }} - {{ car.mileage }} - {{ car.price}},</h3>
+    {% endfor %}
+    </div>
+
+</body>
+</html>
